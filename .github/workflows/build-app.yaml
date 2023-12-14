@@ -1,0 +1,22 @@
+name: Build app React
+on:
+  push:
+    branches:
+      - development
+jobs:
+  build:
+    runs-on: macos-latest
+    steps: 
+    - name: Check out repository code
+      uses: actions/checkout@v3
+
+    - name: Setuo node
+      uses: actions/setuo-node@v3
+      with:
+      node.version: 18.x
+
+    - name: Install dependencies
+      run: npm snstall
+
+      - name: Build app
+      run: npm run build
