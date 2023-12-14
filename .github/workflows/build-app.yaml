@@ -13,7 +13,7 @@ jobs:
     - name: Setuo node
       uses: actions/setuo-node@v3
       with:
-      node.version: 18.x
+      node-version: 18.x
 
     - name: Install dependencies
       run: npm snstall
