@@ -16,7 +16,7 @@ jobs:
         node-version: 18.x
 
     - name: Install dependencies
-      run: npm snstall
+      run: npm install
 
       - name: Build app
       run: npm run build 
