@@ -1,9 +1,7 @@
 name: Build app React
 on:
   push:
-    branches: 
-      
-development
+    branches: development
 jobs:
   build:
     runs-on: macos-latest
